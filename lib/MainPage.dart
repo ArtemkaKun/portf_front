@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'SkillsTypes.dart';
-import 'InfoBlock.dart';
-import 'NavBar.dart';
+import 'package:portf/BodyBlock.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key key}) : super(key: key);
@@ -10,13 +8,10 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-        NavBar(),
-        InfoBlock(),
-        SkillsTypes(),
+        body: Column(
+          children: <Widget>[
+            BodyBlock(),
       ],
-      )
-    );
+    ));
   }
 }

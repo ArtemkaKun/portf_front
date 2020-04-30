@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-import 'TextItem.dart';
+import 'package:portf/MainInfoBlock.dart';
+import 'package:portf/NavBar.dart';
 
-class TextInfo extends StatelessWidget {
+class BodyBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Column(
         children: <Widget>[
-            TextItem("Hi, I'm Artem", 24),
-            TextItem("Info about me", 16),
+          NavBar(),
+          MainInfoBlock(),
         ],
       ),
     );

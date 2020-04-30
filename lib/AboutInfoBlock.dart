@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'ImageItem.dart';
-import 'TextInfo.dart';
+import 'TextAboutInfo.dart';
 
-class InfoBlock extends StatelessWidget {
+class AboutInfoBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 100,
       child: Row(
         children: <Widget>[
-          TextInfo(),
+          TextAboutInfo(),
           ImageItem("artem.png"),
         ],
       ),

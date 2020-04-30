@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'NavButtons.dart';
+
 import 'TextItem.dart';
 
-class NavBar extends StatelessWidget {
+class TextAboutInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
-      child: Row(
+      child: Column(
         children: <Widget>[
-          TextItem("Artem Yurchenko", 36),
-          NavButtons(),
+            TextItem("Hi, I'm Artem", 24),
+            TextItem("Info about me", 16),
         ],
       ),
     );
